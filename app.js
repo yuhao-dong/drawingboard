@@ -28,6 +28,19 @@ lButton.addEventListener("click", function(){
     fontSizeText.innerHTML = "Current Line Width: Large";
 })
 
+// add the changing color boolean
+let changedColor = false;
+
+// finds the color picker
+let colorpicker = document.querySelector("#color");
+
+// make the default color black
+let currentColor = "black";
+
+colorpicker.addEventListener("change", function(e){
+    changedColor = true;
+})
+
 // callback function that creats divs (dots)
 let addDots = function (e) {
     let x = e.pageX;
@@ -40,6 +53,14 @@ let addDots = function (e) {
     createDot.classList.add("placehold");
     // add the class for different line width
     createDot.classList.add(classType);
+
+    // if detects changing color, set the current color to the changed color
+    if(changedColor){
+        currentColor = `${colorpicker.value}`;
+        changedColor = false;
+    }
+    createDot.style.backgroundColor = currentColor;
+
     pan.appendChild(createDot);
 }
 

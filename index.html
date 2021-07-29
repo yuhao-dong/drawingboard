@@ -24,8 +24,8 @@
     <div class="container-lg marginContainer">
         <div class="myContainer">
             <h1>Welcome to My Simple Drawing Board</h1>
-            <p>You can draw anything in the box below. Clicking "reset" will clear the drawing. 
-                You may also change the line width by clicking 
+            <p>You can draw anything in the box below. Clicking "reset" will clear the drawing.
+                You may also change the line width by clicking
                 the buttons below. Please do NOT resize your screen when you are drawing.</p>
         </div>
 
@@ -39,11 +39,18 @@
             <button class=" btn btn-outline-primary" id="resetButton">Reset</button>
         </div>
 
-        <!-- Contains the buttons to change the line width -->
-        <div class="btn-group myContainer marginContainer">
-            <button class="btn btn-secondary fontButton" id="smallFont">Small</button>
-            <button class="btn btn-secondary fontButton" id="mediumFont">Medium</button>
-            <button class="btn btn-secondary fontButton" id="largeFont">Large</button>
+        <div class="row">
+            <!-- Contains the buttons to change the line width -->
+            <div class="btn-group myContainer marginContainer col-auto">
+                <button class="btn btn-secondary fontButton" id="smallFont">Small</button>
+                <button class="btn btn-secondary fontButton" id="mediumFont">Medium</button>
+                <button class="btn btn-secondary fontButton" id="largeFont">Large</button>
+            </div>
+            <!-- contains the color picker -->
+            <div class = "col-auto marginContainer">
+                <input type="color" name="color" id="color" class="h-100 d-inline-block">
+            </div>
+            <div class="col"></div>
         </div>
 
         <!-- Printing the current line width -->

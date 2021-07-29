@@ -68,21 +68,18 @@ h1:hover{
 
 /* line width classes */
 .dot {
-    background-color: royalblue;
     width: 5px;
     height: 5px;
     border-radius: 50%;
 }
 
 .mediumDot{
-    background-color: royalblue;
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
 .largeDot{
-    background-color: royalblue;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -94,4 +91,8 @@ h1:hover{
     font-size: 30px;
     font-weight: 600;
     color: #00509d;
+}
+
+#color{
+    border-width: 2px;
 }
