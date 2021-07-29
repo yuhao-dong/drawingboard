@@ -69,8 +69,8 @@ let removeDrawMobile = function(){
     pan.removeEventListener("touchmove", addDots);
 }
 
-pan.addEventListener("touchstart",draw);
-document.body.addEventListener("touchend",removeDraw);
+pan.addEventListener("touchstart",drawMobile);
+document.body.addEventListener("touchend",removeDrawMobile);
 
 // reset button
 const resetButton = document.querySelector("#resetButton");
