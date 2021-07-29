@@ -60,6 +60,18 @@ let removeDraw = function(){
 pan.addEventListener("mousedown",draw);
 document.body.addEventListener("mouseup",removeDraw);
 
+// add condition functions for mobile device
+let drawMobile = function(){
+    pan.addEventListener("touchmove", addDots);
+}
+
+let removeDrawMobile = function(){
+    pan.removeEventListener("touchmove", addDots);
+}
+
+pan.addEventListener("touchstart",draw);
+document.body.addEventListener("touchend",removeDraw);
+
 // reset button
 const resetButton = document.querySelector("#resetButton");
 resetButton.addEventListener("click", function(){
