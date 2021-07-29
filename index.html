@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Board</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container-lg marginContainer">
+        <div class="myContainer">
+            <h1>Welcome to My Simple Drawing Board</h1>
+            <p>You can draw anything in the box below. Clicking "reset" will clear the drawing. 
+                You may also change the line width by clicking 
+                the buttons below. Please do NOT resize your screen when you are drawing.</p>
+        </div>
+
+        <!-- Contains the main drawing board -->
+        <div class="myContainer drawingContainer">
+            <div id="drawingBoard"></div>
+        </div>
+
+        <!-- Contains the reset button -->
+        <div class="myContainer">
+            <button class=" btn btn-outline-primary" id="resetButton">Reset</button>
+        </div>
+
+        <!-- Contains the buttons to change the line width -->
+        <div class="btn-group myContainer marginContainer">
+            <button class="btn btn-secondary fontButton" id="smallFont">Small</button>
+            <button class="btn btn-secondary fontButton" id="mediumFont">Medium</button>
+            <button class="btn btn-secondary fontButton" id="largeFont">Large</button>
+        </div>
+
+        <!-- Printing the current line width -->
+        <div class="marginContainer">
+            <p id="printFontSize">Current Line Width: Small</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

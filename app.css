@@ -1,0 +1,96 @@
+html{
+    height: 100vh;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    background-color: #e8e8e4;
+}
+
+.myContainer{
+    text-align: center;
+}
+
+h1{
+    color: #8a817c;
+    font-weight: 600;
+    transition: color 1s;
+}
+
+h1:hover{
+    color: darkblue;
+}
+
+.btn{
+    border-width: 2px;
+}
+
+.marginContainer{
+    margin-top: 20px;
+}
+
+/* Line Width Button Properties */
+.fontButton{
+    background-color: #bcb8b1;
+    color: #463f3a;
+    font-weight:400;
+}
+
+.fontButton:hover {
+    background-color: #8a817c;
+    color: #f0efeb;
+}
+
+.fontButton:focus {
+    background-color: #8a817c;
+    color: #e2ece9;
+}
+
+
+/* Drawing Board Div Info */
+#drawingBoard {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 10px burlywood outset;
+}
+
+.drawingContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+/* line width classes */
+.dot {
+    background-color: royalblue;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.mediumDot{
+    background-color: royalblue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.largeDot{
+    background-color: royalblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+/* Text about line width */
+#printFontSize {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00509d;
+}
