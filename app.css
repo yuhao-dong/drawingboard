@@ -62,6 +62,7 @@ h1:hover{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    touch-action: none;
 }
 
 
