@@ -11,20 +11,25 @@ let pan = document.querySelector("#drawingBoard");
 
 // finds the initial line width class
 let classType = "dot";
+// to make the point at cursor center
+let halfLine = 2;
 
 // change the line width class when click the buttons
 sButton.addEventListener("click", function(){
     classType = "dot";
+    halfLine = 2;
     fontSizeText.innerHTML = "Current Line Width: Small";
 })
 
 mButton.addEventListener("click", function(){
     classType = "mediumDot";
+    halfLine = 5;
     fontSizeText.innerHTML = "Current Line Width: Medium";
 })
 
 lButton.addEventListener("click", function(){
     classType = "largeDot";
+    halfLine = 8;
     fontSizeText.innerHTML = "Current Line Width: Large";
 })
 
@@ -47,8 +52,8 @@ let addDots = function (e) {
     let y = e.pageY;
     let createDot = document.createElement("div");
     createDot.style.position = "absolute";
-    createDot.style.top = `${y}px`;
-    createDot.style.left = `${x}px`;
+    createDot.style.top = `${y-halfLine}px`;
+    createDot.style.left = `${x-halfLine}px`;
     // add an empty class so we can find all dots and easy to clear them.
     createDot.classList.add("placehold");
     // add the class for different line width

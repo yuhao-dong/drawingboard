@@ -53,9 +53,10 @@ h1:hover{
 /* Drawing Board Div Info */
 #drawingBoard {
     width: 500px;
-    height: 500px;
+    height: 500px; 
     background-color: white;
     border: 10px burlywood outset;
+    cursor: crosshair;
 }
 
 .drawingContainer {
@@ -68,8 +69,8 @@ h1:hover{
 
 /* line width classes */
 .dot {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
 }
 
@@ -80,8 +81,8 @@ h1:hover{
 }
 
 .largeDot{
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
 }
 
